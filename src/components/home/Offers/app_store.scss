@@ -1,0 +1,125 @@
+@import "../../../styles/_color.scss";
+.app_store {
+    display: grid;
+    grid-template-columns: (1fr 1fr);
+    background-color: $base_primary_color ;
+    padding: 20px 80px 20px 80px;
+    h4 {
+        font-size: 25px;
+        color: $base_dark_text;
+        font-weight: 600;
+    }
+
+    .app_details {
+        text-align: center;
+        justify-content: center;
+
+        small {
+            color: $base_dark_text;
+        }
+    }
+
+    .app_icons {
+        display: flex;
+       flex-direction: row;
+      justify-content: center;
+       gap: 10px;
+       span {
+        position: relative;
+        top: 22%;
+        color: $base_dark_text;
+        font-size: 20px;
+        font-weight: 600;
+       }
+
+        img {
+        width: auto;
+        height: 60px;
+       }
+    }
+}
+
+// mobile responsive
+
+@media only screen and (max-width:768px) {
+    .app_store {
+        display: grid;
+        grid-template-columns: (1fr);
+        background-color: $base_primary_color ;
+        padding: 20px 80px 20px 80px;
+        h4 {
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        .app_details {
+            text-align: center;
+            justify-content: center;
+
+            small {
+                color: $base_dark_text;
+            }
+        }
+
+        .app_icons {
+            display: flex;
+           flex-direction: row;
+          justify-content: center;
+           gap: 10px;
+           span {
+            position: relative;
+            top: 22%;
+            color: $base_dark_text;
+            font-size: 20px;
+            font-weight: 600;
+           }
+
+            img {
+            width: auto;
+            height: 50px;
+           }
+        }
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .app_store {
+        display: grid;
+        grid-template-columns: (1fr 1fr);
+        background-color: $base_primary_color ;
+        padding: 20px 80px 20px 80px;
+        h4 {
+            font-size: 25px;
+            color: $base_dark_text;
+            font-weight: 600;
+        }
+
+        .app_details {
+            text-align: center;
+            justify-content: center;
+
+            small {
+                color: $base_dark_text;
+            }
+        }
+
+        .app_icons {
+            display: flex;
+           flex-direction: row;
+          justify-content: center;
+           gap: 10px;
+           span {
+            position: relative;
+            top: 22%;
+            color: $base_dark_text;
+            font-size: 20px;
+            font-weight: 600;
+           }
+
+            img {
+            width: auto;
+            height: 60px;
+           }
+        }
+    }
+}

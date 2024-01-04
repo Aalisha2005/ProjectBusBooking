@@ -1,0 +1,116 @@
+@import "../../../styles/_color.scss";
+.offer-box {
+  padding: 10px 60px 30px 60px;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: (1fr 1fr 1fr 1fr);
+
+  .offer-boxes {
+    display: grid;
+    padding: 40px;
+    grid-template-columns: (1fr 3fr);
+    height: auto;
+    width: auto;
+    min-height: 200px;
+    gap: 1px;
+    background-color: $base_primary_color;
+    color: $base_dark_text;
+    .fa-duotone {
+      position: relative;
+      top: 20%;
+      font-size: 60px;
+    }
+    .fa-duotone::before {
+      color: red;
+    }
+
+    .fa-duotone:after {
+      color: rgb(212, 16, 49);
+    }
+  }
+}
+
+.offer-boxes:hover {
+  background-color: #dfdfdf;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+// mobile responsive
+
+@media only screen and (max-width: 768px) {
+  .offer-box {
+    padding: 10px 20px 20px 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: (1fr);
+
+    .offer-boxes {
+      display: grid;
+      padding: 20px;
+      grid-template-columns: (1fr 2fr);
+
+      grid: 10px;
+
+      background-color: $base_primary_color;
+
+      .fa-duotone {
+        position: relative;
+        top: 20%;
+        font-size: 60px;
+      }
+      .fa-duotone::before {
+        color: red;
+      }
+
+      .fa-duotone:after {
+        color: rgb(212, 16, 49);
+      }
+    }
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+}
+
+// tablet responsive
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .offer-box {
+    padding: 10px 20px 30px 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: (1fr 1fr);
+
+    .offer-boxes {
+      display: grid;
+      padding: 20px;
+      grid-template-columns: (1fr 2fr);
+      height: auto;
+      width: 100%;
+      grid: 10px;
+
+      background-color: $base_primary_color;
+
+      .fa-duotone {
+        position: relative;
+        top: 20%;
+        font-size: 60px;
+      }
+      .fa-duotone::before {
+        color: red;
+      }
+
+      .fa-duotone:after {
+        color: rgb(212, 16, 49);
+      }
+    }
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+}
